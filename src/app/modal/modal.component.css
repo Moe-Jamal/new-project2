@@ -1,0 +1,13 @@
+.outerContainer {
+    position: fixed;
+    inset: 0;
+    background-color: #f897485d;
+    z-index: 99999;
+}
+
+@media (max-width: 576px) {
+    .innerContainer img {
+        width: 100% !important;
+        transform: scale(1.3);
+    }
+}

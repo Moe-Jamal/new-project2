@@ -1,0 +1,74 @@
+<section class="contact">
+  <div class="container h-100">
+    <div class="heading reverse position-relative text-center">
+      <h1 class="text-uppercase fw-bolder text-dark mb-0">contact component</h1>
+    </div>
+    <form class="bottom-heading w-75 mx-auto mb-3" (ngSubmit)="onSubmit()">
+      <div class="mb-2">
+        <label
+          for="userName"
+          class="form-label hidden-label text-color"
+          [class.show]="formData.userName.length > 0"
+          >userName</label
+        >
+        <input
+          type="text"
+          class="form-control shadow-none border-bottom border-0 py-3 overflow-hidden"
+          id="userName"
+          placeholder="userName"
+          name="userName"
+          [(ngModel)]="formData.userName"
+        />
+      </div>
+      <div class="mb-2">
+        <label
+          for="userAge"
+          class="form-label hidden-label text-color"
+          [class.show]="formData.userAge! > 0"
+          >userAge</label
+        >
+        <input
+          type="number"
+          class="form-control shadow-none border-bottom border-0 py-3 overflow-hidden"
+          id="userAge"
+          placeholder="userAge"
+          name="userAge"
+          [(ngModel)]="formData.userAge"
+        />
+      </div>
+      <div class="mb-2">
+        <label
+          for="userEmail"
+          class="form-label hidden-label text-color"
+          [class.show]="formData.userEmail.length > 0"
+          >userEmail</label
+        >
+        <input
+          type="email"
+          class="form-control shadow-none border-bottom border-0 py-3 overflow-hidden"
+          id="userEmail"
+          placeholder="userEmail"
+          name="userEmail"
+          [(ngModel)]="formData.userEmail"
+        />
+      </div>
+      <div class="mb-2">
+        <label
+          for="userPassword"
+          class="form-label hidden-label text-color"
+          [class.show]="formData.userPassword.length > 0"
+          >userPassword</label
+        >
+        <input
+          type="password"
+          class="form-control shadow-none border-bottom border-0 py-3 overflow-hidden"
+          id="userPassword"
+          placeholder="userPassword"
+          name="userPassword"
+          [(ngModel)]="formData.userPassword"
+        />
+      </div>
+      <button class="btn main-color text-white mt-3">Send Message</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar {
+    transition: 0.4s padding ease-in-out;
+}

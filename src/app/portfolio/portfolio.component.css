@@ -1,0 +1,23 @@
+.portfolio {
+    min-height: 80vh;
+}
+
+.portfolio .container {
+    margin-top: 125px;
+}
+
+.layer {
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 151, 72, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.img-holder:hover .layer {
+    opacity: 1;
+}

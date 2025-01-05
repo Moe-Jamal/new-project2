@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --main-color: #F89748;
+    --main-section-height: 95vh;
+    --text-color: #F89748;
+}
+
+.main-color {
+    background-color: var(--main-color) !important;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.heading::before {
+    content: "";
+    width: 200px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading.reverse::before {
+    background-color: rgb(33, 37, 41);
+}
+
+.heading::after {
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    background-color: rgb(33, 37, 41);
+    width: 50px;
+    height: 50px;
+    bottom: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading.reverse::after {
+    background-color: #fff;
+}
+
+.main-section {
+    height: var(--main-section-height);
+}
+
+.bottom-heading {
+    margin-top: 60px;
+}
